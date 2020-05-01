@@ -1,0 +1,40 @@
+===IDE===
+IntelliJ IDEA 2020.1 (Community Edition)
+Build #IC-201.6668.121, built on April 8, 2020
+Runtime version: 11.0.6+8-b765.25 amd64
+VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+Windows 10 10.0
+GC: ParNew, ConcurrentMarkSweep
+Memory: 899M
+Cores: 8
+Non-Bundled Plugins: jd-intellij
+
+===JDK VERSION===
+1.8
+
+===Spring Security credentials===
+username: james
+password: bond
+
+===HOW TO RUN===
+mvn clean install
+mvn compile
+run app
+
+
+===Request body example===
+
+{
+   "address":{
+      "street":"Sterrebos",
+      "housenumber":"2",
+      "postalcode":"5344 AM",
+      "city":"Oss",
+      "geoLocation":{
+         "lat":"51.753525",
+         "lng":"5.511859"
+      }
+   },
+   "distance":0,
+   "type":"ING"
+}
